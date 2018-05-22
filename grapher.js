@@ -74,8 +74,8 @@ $(function (){
     if(hash){
       setExpr(hash);
     } else {
-      setExpr(defaultExpr);
-      setHashValue(NULL);
+      //setExpr(defaultExpr);
+      //setHashValue(NULL);
     }
 
     // Update the text input to contain the updated expression.
