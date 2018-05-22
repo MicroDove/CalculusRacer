@@ -75,7 +75,7 @@ $(function (){
       setExpr(hash);
     } else {
       setExpr(defaultExpr);
-      setHashValue(expr);
+      setHashValue(NULL);
     }
 
     // Update the text input to contain the updated expression.
@@ -153,7 +153,7 @@ $(function (){
         
         // These are values in math coordinates.
         mathX, mathY;
-    
+    2*
     // Clear the canvas.
     c.clearRect(0, 0, canvas.width, canvas.height);
 
