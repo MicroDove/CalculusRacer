@@ -40,7 +40,7 @@ $(function (){
       // 'defaultExpr' is assigned to 'expr' if there is no expression in the 
       // URL hash when the page is loaded. Otherwise the URL hash value is 
       // assigned to 'expr' on page load.
-      defaultExpr = 'x',
+      defaultExpr = '',
 
       // 'scope' defines the variables available inside the math expression.
       scope = {
@@ -140,6 +140,7 @@ $(function (){
 
   // Plots the math expression curve on the canvas.
   function drawCurve(){
+    if (expr != defaultExpr){
 
     // These variables are used inside the for loop.
     var i, 
@@ -197,6 +198,7 @@ $(function (){
     // This line of code renders the curve path defined by the 'c.lineTo' calls
     // by filling it in with a single-pixel-wide outline, called a 'stroke'.
     c.stroke();
+    }
   }
 
   // Evaluates the current math expression based on the given 
@@ -223,4 +225,5 @@ $(function (){
   function setHashValue(value){
     return location.hash = value;
   }
+
 });
